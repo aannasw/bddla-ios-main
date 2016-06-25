@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BDDLA_MainPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1_blur" translatesAutoresizingMaskIntoConstraints="NO" id="rkC-Ms-rTs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-M5-Ct6" userLabel="alpha_layer">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="iKM-zK-kYD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="607"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LLS-Ar-jIT">
+                                        <rect key="frame" x="78" y="0.0" width="445" height="133"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bddla_sq_h" translatesAutoresizingMaskIntoConstraints="NO" id="HR2-ES-BXl">
+                                                <rect key="frame" x="0.0" y="0.0" width="445" height="133"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="HR2-ES-BXl" secondAttribute="height" multiplier="445:133" id="8ve-y6-0ig"/>
+                                                    <constraint firstAttribute="width" constant="445" id="lrx-Nz-hcr"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HR2-ES-BXl" firstAttribute="top" secondItem="LLS-Ar-jIT" secondAttribute="top" id="RYt-Cg-vlC"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hF3-Gh-syO">
+                                        <rect key="frame" x="130" y="151" width="340" height="140"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6L-5l-nGl">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="j6L-5l-nGl" secondAttribute="height" multiplier="55:48" id="LI9-gl-k5C"/>
+                                                    <constraint firstAttribute="width" constant="160" id="Q8G-2o-EX6"/>
+                                                </constraints>
+                                                <state key="normal" image="ps_speakers"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwt-nI-c9F">
+                                                <rect key="frame" x="180" y="0.0" width="160" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="Dwv-ry-kr8"/>
+                                                    <constraint firstAttribute="width" secondItem="zwt-nI-c9F" secondAttribute="height" multiplier="55:48" id="xWa-yb-fpr"/>
+                                                </constraints>
+                                                <state key="normal" image="ps_sessions"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QA4-a8-eUD">
+                                        <rect key="frame" x="130" y="309" width="340" height="139"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hb2-l3-wbY">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="139"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Hb2-l3-wbY" secondAttribute="height" multiplier="55:48" id="T54-JV-yAf"/>
+                                                    <constraint firstAttribute="width" constant="160" id="kzw-f6-QQ6"/>
+                                                </constraints>
+                                                <state key="normal" image="ps_sponsors"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hir-q0-B9Z">
+                                                <rect key="frame" x="180" y="0.0" width="160" height="139"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="5fg-D2-kSI"/>
+                                                    <constraint firstAttribute="width" secondItem="hir-q0-B9Z" secondAttribute="height" multiplier="55:48" id="ewL-Kc-5z1"/>
+                                                </constraints>
+                                                <state key="normal" image="ps_maps"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4aj-qW-LY1">
+                                        <rect key="frame" x="130" y="466" width="340" height="141"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqC-Ju-08Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="141"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kqC-Ju-08Y" secondAttribute="height" multiplier="220:193" id="dR9-mx-yyW"/>
+                                                    <constraint firstAttribute="width" constant="160" id="vhk-lU-HPB"/>
+                                                </constraints>
+                                                <state key="normal" image="ps_credits"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuZ-i3-jAA">
+                                                <rect key="frame" x="180" y="0.0" width="160" height="141"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="YKL-rI-Xzh"/>
+                                                    <constraint firstAttribute="width" secondItem="wuZ-i3-jAA" secondAttribute="height" multiplier="220:193" id="f5f-IE-iyY"/>
+                                                </constraints>
+                                                <state key="normal" image="ps_about"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rkC-Ms-rTs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0HM-0k-KKf"/>
+                            <constraint firstItem="iKM-zK-kYD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3zL-fg-MYm"/>
+                            <constraint firstAttribute="trailing" secondItem="iKM-zK-kYD" secondAttribute="trailing" id="Srv-mN-xEV"/>
+                            <constraint firstAttribute="trailing" secondItem="Jcw-M5-Ct6" secondAttribute="trailing" id="X5D-I8-S1s"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rkC-Ms-rTs" secondAttribute="bottom" id="YYr-yS-adM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jcw-M5-Ct6" secondAttribute="bottom" id="ezD-7g-b4T"/>
+                            <constraint firstItem="rkC-Ms-rTs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gcL-s6-1BN"/>
+                            <constraint firstItem="iKM-zK-kYD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hva-5H-L6B"/>
+                            <constraint firstItem="Jcw-M5-Ct6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iKz-VB-skv"/>
+                            <constraint firstItem="Jcw-M5-Ct6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uT4-V4-7sY"/>
+                            <constraint firstItem="iKM-zK-kYD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="v2n-sO-p0N"/>
+                            <constraint firstAttribute="trailing" secondItem="rkC-Ms-rTs" secondAttribute="trailing" id="wtE-Uo-7pM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="492"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bddla_sq_h" width="445" height="133"/>
+        <image name="bg1_blur" width="683" height="1024"/>
+        <image name="ps_about" width="220" height="180"/>
+        <image name="ps_credits" width="220" height="180"/>
+        <image name="ps_maps" width="220" height="180"/>
+        <image name="ps_sessions" width="220" height="180"/>
+        <image name="ps_speakers" width="220" height="180"/>
+        <image name="ps_sponsors" width="220" height="180"/>
+    </resources>
+</document>
